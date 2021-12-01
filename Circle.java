@@ -1,56 +1,56 @@
-пакет  ru.mirea.gibo0119.pr4 ;
+package ru.mirea.gibo0119.pr4;
 
-import  java.lang. * ;
+import java.lang.*;
 
-  public  class  Circle {
-частный  int x;
-частный  int y;
-частный  int r;
+  public class Circle {
+private int x;
+private int y;
+private int r;
 
-public  Circle ( int  x , int  y , int  r ) {
-        это . х = х;
-        это . у = у;
-        это . г = г;
+public Circle(int x, int y, int r) {
+        this.x = x;
+        this.y = y;
+        this.r = r;
         }
 
-public  int  getX () {
-        вернуть x;
+public int getX() {
+        return x;
         }
 
-public  void  setX ( int  x ) {
-        это . х = х;
+public void setX(int x) {
+        this.x = x;
         }
 
-        public  int  getY () {
-        вернуть y;
+        public int getY() {
+        return y;
         }
 
-public   void  setY ( int  y ) {
-        это . у = у;
+public  void setY(int y) {
+        this.y = y;
         }
 
-public  int  getR () {
+public int getR() {
         return r;
         }
 
-public   void  setR ( int  r ) {
-        это . г = г;
+public  void setR(int r) {
+        this.r = r;
         }
 
 @Override
-public  String  toString () {
-        return  " Круг { "  +
-        « х = »  + х +
-        " , y = "  + y +
-        " , r = "  + r +
-        ' } ' ;
+public String toString() {
+        return "Circle{" +
+        "x=" + x +
+        ", y=" + y +
+        ", r=" + r +
+        '}';
         }
-public  double  getLength () {
-        двойной l =  2  *  Мат . Пи  *  это . р;
+public double getLength() {
+        double l = 2 * Math.PI * this.r;
         return l;
         }
-public  double  getS () {
-        двойной s =  Math . PI  *  Math . pow (r, 2 );
+public double getS() {
+        double s = Math.PI * Math.pow(r,2);
         return s;
         }
         }
