@@ -1,55 +1,55 @@
-пакет  ru.mirea.gibo0119.pr4 ;
+package ru.mirea.gibo0119.pr4;
 
-import  org.w3c.dom.ls.LSOutput ;
-import  ru.mirea.gibo0119.pr4.Circle ;
-import  java.util.Arrays ;
-import  java.util.Scanner ;
+import org.w3c.dom.ls.LSOutput;
+import ru.mirea.gibo0119.pr4.Circle;
+import java.util.Arrays;
+import java.util.Scanner;
 
-  public  class  Main {
-public  static  void  main ( String [] args ) {
-        ru.mirea.gibo0119.pr4.Circle [] arr =  new ru.mirea.gibo0119.pr4. Круг [ 3 ];
-        Scanner sc =  новый  сканер ( System . In);
-        for ( int i =  0 ; i < arr . length; i ++ ) {
+  public class Main {
+public static void main(String[] args) {
+        ru.mirea.gibo0119.pr4.Circle[] arr = new ru.mirea.gibo0119.pr4.Circle[3];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < arr.length; i++) {
         int xx, yy, rr;
-        хх = сбн . nextInt ();
-        yy = sc . nextInt ();
-        rr = sc . nextInt ();
-        arr [i] =  новый  круг (xx, yy, rr);
+        xx = sc.nextInt();
+        yy = sc.nextInt();
+        rr = sc.nextInt();
+        arr[i] = new Circle(xx, yy, rr);
         }
-        Система . из . println ( " \ n Круг по умолчанию " );
+        System.out.println("\nDefault Circle ");
 
-        for ( int i =  0 ; i < arr . length; i ++ ) {
-        Система . из . println (arr [я] . toString ());
+        for (int i = 0; i < arr.length; i++) {
+        System.out.println(arr[i].toString());
         }
-        Система . из . println ( " \ n Круг отсортирован по максимальному радиусу: " );
-        Круг memp;
-        for ( int i =  0 ; i < arr . length; i ++ ) {
-        for ( int j =  0 ; j < arr . length -  1  - i; j ++ ) {
-        if (arr [j] . getR () > arr [j +  1 ] . getR ()) {
-        memp = arr [j];
-        arr [j] = arr [j +  1 ];
-        arr [j +  1 ] = memp;
-        }
-        }
-        }
-
-        for ( int i =  0 ; i < arr . length; i ++ ) {
-        Система . из . println (arr [i]);
-        }
-        Система . из . println ( " \ n Круг отсортирован по минимальному радиусу: " );
-        Температура круга ;
-        for ( int i =  0 ; i < arr . length; i ++ ) {
-        for ( int j =  0 ; j < arr . length -  1  - i; j ++ ) {
-        if (arr [j] . getR () < arr [j +  1 ] . getR ()) {
-        temp = arr [j];
-        arr [j] = arr [j +  1 ];
-        arr [j +  1 ] = темп;
+        System.out.println("\nCircle were sorted by max radius: ");
+        Circle memp;
+        for (int i = 0; i < arr.length; i++) {
+        for (int j = 0; j < arr.length - 1 - i; j++) {
+        if (arr[j].getR() > arr[j + 1].getR()) {
+        memp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = memp;
         }
         }
         }
 
-        for ( int i =  0 ; i < arr . length; i ++ ) {
-        Система . из . println (arr [i]);
+        for (int i = 0; i < arr.length; i++) {
+        System.out.println(arr[i]);
+        }
+        System.out.println("\nCircle were sorted by min radius: ");
+        Circle temp;
+        for (int i = 0; i < arr.length; i++) {
+        for (int j = 0; j < arr.length - 1 - i; j++) {
+        if (arr[j].getR() < arr[j + 1].getR()) {
+        temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+        }
+        }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+        System.out.println(arr[i]);
         }
         }
 
